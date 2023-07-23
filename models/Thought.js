@@ -6,7 +6,7 @@ const thoughtSchema = new Schema(
     thoughtText: {
       type: String,
       required: true,
-      max_length: 280,
+      maxlength: 280,
     },
     createdAt: {
       type: Date,
@@ -16,10 +16,10 @@ const thoughtSchema = new Schema(
       type: String,
       required: true,
     },
-  },
     reactions: [
         reactionSchema
     ],
+  },
   {
     toJSON: {
         getters: true,
