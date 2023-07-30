@@ -8,25 +8,26 @@ const thoughtSchema = new Schema(
       required: true,
       maxlength: 280,
     },
-    createdAt: {
-      type: Date,
-      default: Date.now,
-    },
     username: {
       type: String,
       required: true,
     },
-    reactions: [
-        reactionSchema
-    ],
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
+    reactions: [reactionSchema],
   },
   {
     toJSON: {
-        getters: true,
-        virtuals: true,
-        transform: function (doc, ret) {
-            ret.createdAt = doc.createdAt.toLocaleString('en-US', { dataStyle: 'medium', timeStyle: 'short' });
-        },
+      getters: true,
+      virtuals: true,
+      transform: function (doc, ret) {
+        ret.createdAt = doc.createdAt.toLocaleString("en-US", {
+          dataStyle: "medium",
+          timeStyle: "short",
+        });
+      },
     },
     id: false,
   }
