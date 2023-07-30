@@ -99,6 +99,7 @@ module.exports = {
 
       res.json(thought);
     } catch (err) {
+      console.log("o dear", err);
       res.status(500).json(err);
     }
   },
