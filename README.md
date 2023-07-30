@@ -9,4 +9,4 @@ This is an API for a social application like Meta or Myspace. Its functionality 
 
 ## Demo
 Below is a quick video to show how the application works!
-<iframe src="https://drive.google.com/file/d/1h07wMYJKdy3lnrm3zS2JxSnYwTDl6aks/preview" width="640" height="480"></iframe>
+<iframe src="https://drive.google.com/file/d/1gCtJcT2uVV8Kez6qJtHOg4oMy69uD4px/view" width="640" height="480"></iframe>
